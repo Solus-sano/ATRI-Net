@@ -1,0 +1,36 @@
+k400_l14_32x224:
+  ckpt: "/data2/liangzhijia/ckpt/k400_k710_uniformerv2_l14_32x224.pyth"
+  config:
+      no_lmhra: True
+      temporal_downsample: False
+      n_dim: 1024
+
+sth2_l14_32x224:
+  ckpt: "/data2/liangzhijia/ckpt/sthv2_uniformerv2_l14_32x224.pyth"
+  config:
+    no_lmhra: False
+    temporal_downsample: True
+    n_layers: 16
+    n_head: 16
+    drop_path_rate: 0.4
+    mlp_dropout: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    cls_dropout: 0.5
+    return_list: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+    n_dim: 1024
+
+sth2_b16_16x224:
+  ckpt: "/data2/liangzhijia/ckpt/sthv2_uniformerv2_b16_16x224.pyth"
+  config:
+    n_layers: 8
+    n_dim: 768
+    n_head: 12
+    mlp_factor: 4.0
+    backbone_drop_path_rate: 0.2
+    drop_path_rate: 0.4
+    mlp_dropout: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    cls_dropout: 0.5
+    return_list: [4, 5, 6, 7, 8, 9, 10, 11]
+    dw_reduction: 1.5
+    no_lmhra: False
+    double_lmhra: True
+    temporal_downsample: True

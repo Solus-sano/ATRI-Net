@@ -1,0 +1,4 @@
+*.pth
+exp.txt
+run/test_record
+run/train_record
