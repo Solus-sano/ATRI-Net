@@ -2,7 +2,7 @@
 
 ATRI-Net完整代码，根据多焦段胚胎发育视频以及男方年龄、女方年龄、是否易位四个临床数据输入判别发育完成的囊胚是否是整倍体。
 
-模型中使用的Uniformerv2：（github：https://github.com/OpenGVLab/UniFormerV2/tree/main）
+模型中使用的Uniformerv2仓库：https://github.com/OpenGVLab/UniFormerV2/tree/main
 
 # 代码
 
